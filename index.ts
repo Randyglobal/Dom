@@ -1,15 +1,10 @@
 // I dont understand Sir, Please what does this error mean?
-const mainContainer = document.querySelector('.mainContainer') as HTMLElement;
+//Juste added export since you are converting ts -> js
+ export const mainContainer = document.querySelector('.mainContainer') as HTMLElement;
 
-// const div = document.createElement('div');
-
-// div.setAttribute('class', 'user');
-
-// mainContainer?.appendChild(div)
 //is here allows you to specify that a standard html element shouls behave like a defined custom built-in element
 let screenContainer = document.createElement('div', { is: 'screen-container' }) as HTMLDivElement;
 let opScreen = document.createElement('input', { is: 'operations-screen' }) as HTMLInputElement;
-
 let ansScreen = document.createElement('input', { is: 'answer-screen' }) as HTMLInputElement;
 
 //assigning classes to the respective variables created
@@ -34,11 +29,6 @@ buttonContainer.setAttribute('class', 'button-container');
 numericContainer.setAttribute('class', 'numeric-container');
 digitsContainer.setAttribute('class', 'digits-container');
 
-/**
- * Ignore this one sir
- * let is_degree=true;
- * const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
- */
 
 /**
  * This is where i started created the class for the perations in the button
